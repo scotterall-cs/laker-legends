@@ -50,6 +50,9 @@ body{
   {font-family:"JetBrains Mono",ui-monospace,Consolas,monospace}
 
 .eyebrow{font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-3); margin:0 0 16px}
+.eyebrow a{color:var(--good); text-decoration:none; border-bottom:1px solid var(--rule-strong)}
+.eyebrow a:hover,.eyebrow a:focus-visible{border-bottom-color:var(--good)}
+footer a{color:var(--good)}
 h1.disp{font-size:clamp(52px,12vw,108px); margin:0; text-wrap:balance}
 .standfirst{font-size:18px; color:var(--ink-2); max-width:64ch; margin:22px 0 0;
   border-left:3px solid var(--good); padding-left:16px}
@@ -148,7 +151,7 @@ footer{margin-top:48px; padding-top:16px; border-top:3px solid var(--ink);
 <div class="wrap">
 
   <div class="masthead">
-    <p class="eyebrow">Laker Legends &nbsp;&middot;&nbsp; Spring Lake, Michigan &nbsp;&middot;&nbsp; Twelve seasons on record</p>
+    <p class="eyebrow">Laker Legends &nbsp;&middot;&nbsp; Spring Lake, Michigan &nbsp;&middot;&nbsp; Twelve seasons on record &nbsp;&middot;&nbsp; <a href="https://scotterall-cs.github.io/laker-legends/season.html">The 2026 Season &rarr;</a></p>
     <h1 class="disp">The Record Book</h1>
     <p class="standfirst">Every champion since 2014, every finish by every manager, and the 2026 season measured down to the bench. Reconstructed season by season from the Yahoo archive, league 714499 and its eleven predecessors.</p>
   </div>
@@ -293,38 +296,72 @@ footer{margin-top:48px; padding-top:16px; border-top:3px solid var(--ink);
     </tbody>
   </table></div>
 
-  <h2 class="disp">2026, week one</h2>
-  <p class="sub-h">One week played. Yahoo may still apply stat corrections through 17 September.</p>
+  <h2 class="disp">2026, through week two</h2>
+  <p class="sub-h">Two weeks played. Eastern Hognosers leads the league in scoring by 44.58 and sits fourth. Yahoo may still apply stat corrections through 24 September.</p>
   <div class="tablewrap"><table>
-    <thead><tr><th scope="col">Winner</th><th scope="col">Score</th><th scope="col">Loser</th><th scope="col">Score</th><th scope="col">Margin</th></tr></thead>
+    <thead><tr><th scope="col">#</th><th scope="col">Team</th><th scope="col">Manager</th><th scope="col">W&ndash;L</th><th scope="col">PF</th><th scope="col">PA</th><th scope="col">Streak</th></tr></thead>
     <tbody>
-      <tr><td class="name">August West</td><td class="good">185.66</td><td class="name">Eastern Hognosers</td><td class="dim">169.50</td><td class="num">16.16</td></tr>
-      <tr><td class="name">Mike Honcho</td><td class="num">131.46</td><td class="name">Connor&rsquo;s team</td><td class="dim">71.54</td><td class="num">59.92</td></tr>
-      <tr><td class="name">The Fosterbas</td><td class="num">128.30</td><td class="name">the11s</td><td class="dim">87.72</td><td class="num">40.58</td></tr>
-      <tr><td class="name">No Suh For You</td><td class="num">111.16</td><td class="name">Saucy Move evan</td><td class="dim">103.62</td><td class="num">7.54</td></tr>
-      <tr><td class="name">St. Dorothy Mantooth</td><td class="num">108.90</td><td class="name">Malik my Ballz</td><td class="dim">95.74</td><td class="num">13.16</td></tr>
-      <tr><td class="name">Fortier&rsquo;s Mandingos</td><td class="num">97.46</td><td class="name">Antonio Banderas</td><td class="dim">97.26</td><td class="bad">0.20</td></tr>
+      <tr><td class="dim">1</td><td class="name">The Fosterbas</td><td class="dim">Foster</td><td><b>2&ndash;0</b></td><td class="num">243.86</td><td class="dim">196.90</td><td class="good">W2</td></tr>
+      <tr><td class="dim">2</td><td class="name">Mike Honcho</td><td class="dim">Cody</td><td><b>2&ndash;0</b></td><td class="num">241.00</td><td class="dim">147.84</td><td class="good">W2</td></tr>
+      <tr><td class="dim">3</td><td class="name">Fortier&rsquo;s Mandingos</td><td class="dim">Zac</td><td><b>2&ndash;0</b></td><td class="num">213.48</td><td class="dim">176.58</td><td class="good">W2</td></tr>
+      <tr><td class="dim">4</td><td class="name">Eastern Hognosers</td><td class="dim">Alex</td><td><b>1&ndash;1</b></td><td class="good">302.46</td><td class="dim">244.72</td><td class="dim">W1</td></tr>
+      <tr><td class="dim">5</td><td class="name">August West</td><td class="dim">Cook</td><td><b>1&ndash;1</b></td><td class="num">257.88</td><td class="dim">290.38</td><td class="dim">L1</td></tr>
+      <tr><td class="dim">6</td><td class="name">St. Dorothy Mantooth</td><td class="dim">Sam</td><td><b>1&ndash;1</b></td><td class="num">233.98</td><td class="dim">228.32</td><td class="dim">L1</td></tr>
+      <tr><td class="dim">7</td><td class="name">No Suh For You</td><td class="dim">Calvin</td><td><b>1&ndash;1</b></td><td class="num">220.34</td><td class="dim">219.18</td><td class="dim">L1</td></tr>
+      <tr><td class="dim">8</td><td class="name">Least LIKELY to Succeed</td><td class="dim">Austin</td><td><b>1&ndash;1</b></td><td class="num">216.62</td><td class="dim">181.12</td><td class="dim">W1</td></tr>
+      <tr><td class="dim">9</td><td class="name">Connor&rsquo;s team</td><td class="dim">Connor</td><td><b>1&ndash;1</b></td><td class="num">204.12</td><td class="dim">256.54</td><td class="dim">W1</td></tr>
+      <tr><td class="dim">10</td><td class="name">Antonio Banderas</td><td class="dim">Kozel</td><td><b>0&ndash;2</b></td><td class="num">173.56</td><td class="dim">207.00</td><td class="bad">L2</td></tr>
+      <tr><td class="dim">11</td><td class="name">the11s</td><td class="dim">Brooks</td><td><b>0&ndash;2</b></td><td class="num">167.04</td><td class="dim">244.32</td><td class="bad">L2</td></tr>
+      <tr><td class="dim">12</td><td class="name">Saucy Move evan</td><td class="dim">Evan</td><td><b>0&ndash;2</b></td><td class="bad">162.68</td><td class="dim">244.12</td><td class="bad">L2</td></tr>
     </tbody>
   </table></div>
 
-  <p class="sub-h2" style="margin-top:26px">Week 1 lineup efficiency &mdash; points scored against the best lineup available</p>
+  <p class="sub-h2" style="margin-top:26px">Results</p>
   <div class="tablewrap"><table>
-    <thead><tr><th scope="col">Team</th><th scope="col">Scored</th><th scope="col">Possible</th><th scope="col">Efficiency</th><th scope="col">Left on bench</th></tr></thead>
+    <thead><tr><th scope="col">Wk</th><th scope="col">Winner</th><th scope="col">Score</th><th scope="col">Loser</th><th scope="col">Score</th><th scope="col">Margin</th></tr></thead>
     <tbody>
-      <tr><td class="name">Eastern Hognosers</td><td class="num">169.50</td><td class="dim">172.50</td><td class="good">98.3%</td><td class="dim">26.10</td></tr>
-      <tr><td class="name">August West</td><td class="num">185.66</td><td class="dim">191.16</td><td class="good">97.1%</td><td class="dim">53.90</td></tr>
-      <tr><td class="name">Antonio Banderas</td><td class="num">97.26</td><td class="dim">100.36</td><td class="good">96.9%</td><td class="dim">31.16</td></tr>
-      <tr><td class="name">Fortier&rsquo;s Mandingos</td><td class="num">97.46</td><td class="dim">101.46</td><td class="good">96.1%</td><td class="dim">15.90</td></tr>
-      <tr><td class="name">The Fosterbas</td><td class="num">128.30</td><td class="dim">135.68</td><td class="num">94.6%</td><td class="dim">46.58</td></tr>
-      <tr><td class="name">Mike Honcho</td><td class="num">131.46</td><td class="dim">140.46</td><td class="num">93.6%</td><td class="dim">45.96</td></tr>
-      <tr><td class="name">St. Dorothy Mantooth</td><td class="num">108.90</td><td class="dim">119.80</td><td class="num">90.9%</td><td class="dim">44.40</td></tr>
-      <tr><td class="name">No Suh For You</td><td class="num">111.16</td><td class="dim">123.16</td><td class="num">90.3%</td><td class="dim">40.70</td></tr>
-      <tr><td class="name">the11s</td><td class="num">87.72</td><td class="dim">111.52</td><td class="bad">78.7%</td><td class="dim">46.90</td></tr>
-      <tr><td class="name">Saucy Move evan</td><td class="num">103.62</td><td class="dim">133.22</td><td class="bad">77.8%</td><td class="dim">48.52</td></tr>
-      <tr><td class="name">Malik my Ballz</td><td class="num">95.74</td><td class="dim">124.64</td><td class="bad">76.8%</td><td class="dim">62.80</td></tr>
-      <tr><td class="name">Connor&rsquo;s team</td><td class="num">71.54</td><td class="dim">118.70</td><td class="bad">60.3%</td><td class="bad">71.70</td></tr>
+      <tr><td class="dim">1</td><td class="name">August West</td><td class="good">185.66</td><td class="name">Eastern Hognosers</td><td class="dim">169.50</td><td class="num">16.16</td></tr>
+      <tr><td class="dim">1</td><td class="name">Mike Honcho</td><td class="num">131.46</td><td class="name">Connor&rsquo;s team</td><td class="dim">71.54</td><td class="num">59.92</td></tr>
+      <tr><td class="dim">1</td><td class="name">The Fosterbas</td><td class="num">128.30</td><td class="name">the11s</td><td class="dim">87.72</td><td class="num">40.58</td></tr>
+      <tr><td class="dim">1</td><td class="name">No Suh For You</td><td class="num">111.16</td><td class="name">Saucy Move evan</td><td class="dim">103.62</td><td class="num">7.54</td></tr>
+      <tr><td class="dim">1</td><td class="name">St. Dorothy Mantooth</td><td class="num">108.90</td><td class="name">Least LIKELY to Succeed</td><td class="dim">95.74</td><td class="num">13.16</td></tr>
+      <tr><td class="dim">1</td><td class="name">Fortier&rsquo;s Mandingos</td><td class="num">97.46</td><td class="name">Antonio Banderas</td><td class="dim">97.26</td><td class="bad">0.20</td></tr>
+      <tr><td class="dim">2</td><td class="name">Eastern Hognosers</td><td class="good">132.96</td><td class="name">Saucy Move evan</td><td class="dim">59.06</td><td class="num">73.90</td></tr>
+      <tr><td class="dim">2</td><td class="name">Connor&rsquo;s team</td><td class="num">132.58</td><td class="name">St. Dorothy Mantooth</td><td class="dim">125.08</td><td class="num">7.50</td></tr>
+      <tr><td class="dim">2</td><td class="name">Least LIKELY to Succeed</td><td class="num">120.88</td><td class="name">August West</td><td class="dim">72.22</td><td class="num">48.66</td></tr>
+      <tr><td class="dim">2</td><td class="name">Fortier&rsquo;s Mandingos</td><td class="num">116.02</td><td class="name">the11s</td><td class="dim">79.32</td><td class="num">36.70</td></tr>
+      <tr><td class="dim">2</td><td class="name">The Fosterbas</td><td class="num">115.56</td><td class="name">No Suh For You</td><td class="dim">109.18</td><td class="bad">6.38</td></tr>
+      <tr><td class="dim">2</td><td class="name">Mike Honcho</td><td class="num">109.54</td><td class="name">Antonio Banderas</td><td class="dim">76.30</td><td class="num">33.24</td></tr>
     </tbody>
   </table></div>
+
+  <p class="sub-h2" style="margin-top:26px">Lineup efficiency, season to date &mdash; points scored against the best lineup available</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th scope="col">Team</th><th scope="col">Scored</th><th scope="col">Possible</th><th scope="col">Efficiency</th><th scope="col">Wk 1</th><th scope="col">Wk 2</th><th scope="col">Benched</th></tr></thead>
+    <tbody>
+      <tr><td class="name">Eastern Hognosers</td><td class="num">302.46</td><td class="dim">305.96</td><td class="good">98.9%</td><td class="dim">98.3%</td><td class="dim">99.6%</td><td class="dim">49.60</td></tr>
+      <tr><td class="name">The Fosterbas</td><td class="num">243.86</td><td class="dim">251.54</td><td class="good">96.9%</td><td class="dim">94.6%</td><td class="dim">99.7%</td><td class="dim">69.88</td></tr>
+      <tr><td class="name">No Suh For You</td><td class="num">220.34</td><td class="dim">232.34</td><td class="good">94.8%</td><td class="dim">90.3%</td><td class="good">100.0%</td><td class="dim">70.20</td></tr>
+      <tr><td class="name">St. Dorothy Mantooth</td><td class="num">233.98</td><td class="dim">248.58</td><td class="num">94.1%</td><td class="dim">90.9%</td><td class="dim">97.1%</td><td class="dim">71.00</td></tr>
+      <tr><td class="name">Mike Honcho</td><td class="num">241.00</td><td class="dim">259.00</td><td class="num">93.1%</td><td class="dim">93.6%</td><td class="dim">92.4%</td><td class="dim">90.54</td></tr>
+      <tr><td class="name">Antonio Banderas</td><td class="num">173.56</td><td class="dim">190.84</td><td class="num">90.9%</td><td class="dim">96.9%</td><td class="dim">84.3%</td><td class="dim">66.54</td></tr>
+      <tr><td class="name">Fortier&rsquo;s Mandingos</td><td class="num">213.48</td><td class="dim">235.98</td><td class="num">90.5%</td><td class="dim">96.1%</td><td class="dim">86.3%</td><td class="dim">71.18</td></tr>
+      <tr><td class="name">August West</td><td class="num">257.88</td><td class="dim">300.68</td><td class="num">85.8%</td><td class="dim">97.1%</td><td class="bad">65.9%</td><td class="dim">100.20</td></tr>
+      <tr><td class="name">Saucy Move evan</td><td class="num">162.68</td><td class="dim">193.88</td><td class="num">83.9%</td><td class="dim">77.8%</td><td class="dim">97.4%</td><td class="dim">51.62</td></tr>
+      <tr><td class="name">Least LIKELY to Succeed</td><td class="num">216.62</td><td class="dim">266.62</td><td class="bad">81.2%</td><td class="dim">76.8%</td><td class="dim">85.1%</td><td class="dim">113.80</td></tr>
+      <tr><td class="name">the11s</td><td class="num">167.04</td><td class="dim">213.04</td><td class="bad">78.4%</td><td class="dim">78.7%</td><td class="dim">78.1%</td><td class="dim">93.90</td></tr>
+      <tr><td class="name">Connor&rsquo;s team</td><td class="num">204.12</td><td class="dim">268.08</td><td class="bad">76.1%</td><td class="bad">60.3%</td><td class="dim">88.8%</td><td class="bad">146.22</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="sub-h2" style="margin-top:26px">Week 2, what it turned on</p>
+  <div class="notes" style="margin-top:8px">
+    <p><strong>Calvin played a perfect lineup and lost.</strong> No Suh For You scored 109.18 of a possible 109.18, the only flawless week in the league, and went down to The Fosterbas by 6.38.</p>
+    <p><strong>August West fell from 185.66 to 72.22</strong>, a 113.44 collapse and the worst managed week of the season at 65.9%. Kyle Pitts started again for 2.00 while Dalton Schultz put up 20.00 on the bench. Two weeks, two Pitts starts, 2.00 points between them.</p>
+    <p><strong>Kozel benched Patrick Mahomes for the second week running.</strong> Mahomes scored 29.98 in street clothes while Lamar Jackson started for 15.80. He did the same thing in week 1. Antonio Banderas is 0&ndash;2 and last in points scored.</p>
+    <p><strong>Evan is not the problem. His roster is.</strong> Saucy Move evan scored 59.06, the lowest total of the season, from a 97.4% efficient lineup with 3.10 points on the bench. There was nothing else to start.</p>
+    <p><strong>Alex is the best manager in the league and has one win.</strong> 98.9% efficiency, the fewest points benched, the most points scored, and a .500 record.</p>
+  </div>
 
   <h2 class="disp">Things worth knowing</h2>
   <div class="notes">
@@ -340,7 +377,7 @@ footer{margin-top:48px; padding-top:16px; border-top:3px solid var(--ink);
   <footer>
     League history reconstructed season by season from Yahoo&rsquo;s archive. Past seasons are served at /&lt;year&gt;/f1/&lt;id&gt;, with per-season league IDs recovered from /&lt;year&gt;/f1/myleagues: 2014 429288, 2015 469460, 2016 441079, 2017 690715, 2018 826201, 2019 702321, 2020 645024, 2021 459267, 2022 337076, 2023 552845, 2024 312247, 2025 222734, 2026 714499.<br>
     Ten teams 2014&ndash;2024, twelve from 2025. Finishes are final placings after playoffs. Season points from each season&rsquo;s standings page. Extremes and streaks from Yahoo&rsquo;s Record Book, attributed to the manager who held the franchise that year.<br>
-    Week 1 2026 captured 15 September 2026, subject to stat corrections through 17 September. Optimal lineups computed slot by slot against real position eligibility, flex included. One franchise is listed by its manager&rsquo;s name.
+    2026 figures captured 22 September 2026, after week two, subject to stat corrections through 24 September. Week 1 totals were unchanged by the week 1 correction window. Optimal lineups computed slot by slot against real position eligibility, flex included, from full starter and bench box scores. Austin&rsquo;s franchise was renamed from Malik my Ballz to Least LIKELY to Succeed between weeks 1 and 2. One franchise is listed by its manager&rsquo;s name. &nbsp;&middot;&nbsp; <a href="https://scotterall-cs.github.io/laker-legends/season.html">Week-by-week recaps and previews</a>
   </footer>
 
 </div>
