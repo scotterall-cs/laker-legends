@@ -83,6 +83,9 @@ h2.disp:first-of-type{margin-top:34px}
   letter-spacing:.02em; text-align:right}
 .muhead .l{font-family:"Anton",sans-serif; font-size:21px; text-transform:uppercase;
   letter-spacing:.02em; color:var(--ink-3)}
+/* Previews have no loser: both teams read at full strength, and the teal
+   score alone marks who is favoured. */
+#wk3 .muhead .l{color:var(--ink)}
 .score{font-size:16px; font-weight:700; text-align:center; font-variant-numeric:tabular-nums}
 .score.hi{color:var(--good)} .score.lo{color:var(--ink-3)}
 .vs{font-size:9.5px; letter-spacing:.1em; color:var(--ink-3); text-align:center; text-transform:uppercase}
@@ -130,11 +133,27 @@ footer a{color:var(--good)}
 
 @media (max-width:660px){
   .cols{grid-template-columns:1fr}
-  .muhead{grid-template-columns:1fr 70px; row-gap:3px}
+  /* One row per team: name left, score right. The five children are
+     name / score / "def" / score / name, so place them explicitly rather
+     than letting the hidden separator shuffle the second row. */
+  .muhead{grid-template-columns:minmax(0,1fr) auto; column-gap:14px; row-gap:6px; align-items:baseline}
   .muhead .vs{display:none}
-  .muhead .w,.muhead .l{text-align:left; font-size:18px}
+  .muhead > *:nth-child(1){grid-column:1; grid-row:1}
+  .muhead > *:nth-child(2){grid-column:2; grid-row:1}
+  .muhead > *:nth-child(4){grid-column:2; grid-row:2}
+  .muhead > *:nth-child(5){grid-column:1; grid-row:2}
+  .muhead .w,.muhead .l{text-align:left; font-size:19px; line-height:1.12; overflow-wrap:anywhere}
+  .muhead .score{text-align:right; font-size:16px}
+  .muline{text-align:left; margin:10px 0 10px}
+  .mubody{font-size:16px}
+  .keys{justify-content:flex-start}
+  .mu{padding:16px 0 18px}
+  .ex li{grid-template-columns:56px minmax(0,1fr)}
+  .ex .w{overflow-wrap:anywhere}
   .status{margin-left:0; width:100%}
   select{min-width:0; width:100%}
+  h2.disp{font-size:26px}
+  body{padding-left:16px; padding-right:16px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
