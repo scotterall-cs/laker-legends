@@ -163,7 +163,7 @@ footer a{color:var(--good)}
   <div class="masthead">
     <p class="eyebrow">Laker Legends &nbsp;&middot;&nbsp; Week-by-week &nbsp;&middot;&nbsp; <a href="https://scotterall-cs.github.io/laker-legends/">The Record Book &rarr;</a></p>
     <h1 class="disp">2026 Season</h1>
-    <p class="standfirst">Every week of the season, recapped from the box score and measured against the best lineup each roster could have started. Three weeks played, fourteen to go.</p>
+    <p class="standfirst">Every week of the season, recapped from the box score and measured against the best lineup each roster could have started. Four weeks played, thirteen to go.</p>
   </div>
 
   <div class="picker">
@@ -171,10 +171,11 @@ footer a{color:var(--good)}
     <select id="weekpick">
       <option value="wk1">Week 1 &mdash; recap</option>
       <option value="wk2">Week 2 &mdash; recap</option>
-      <option value="wk3" selected>Week 3 &mdash; full recap</option>
-      <option value="wk4">Week 4 &mdash; preview</option>
+      <option value="wk3">Week 3 &mdash; recap</option>
+      <option value="wk4" selected>Week 4 &mdash; full recap</option>
+      <option value="wk5">Week 5 &mdash; preview</option>
     </select>
-    <span class="status" id="status">Week 3 final &middot; corrections close Thu 1 Oct</span>
+    <span class="status" id="status">Week 4 final &middot; corrections close Thu 8 Oct</span>
   </div>
 
   <!-- ══════════════ WEEK 1 ══════════════ -->
@@ -364,7 +365,7 @@ footer a{color:var(--good)}
   </section>
 
   <!-- ══════════════ WEEK 3 ══════════════ -->
-  <section id="wk3">
+  <section id="wk3" hidden>
     <h2 class="disp">Week 3</h2>
     <p class="sub-h">Both unbeaten starts died on the same Sunday. One manager played a perfect lineup, another won a game with a zero at quarterback, and four of the six losers had a winning lineup sitting on their bench.</p>
 
@@ -498,9 +499,9 @@ footer a{color:var(--good)}
     </table></div>
     <p class="sub-h" style="margin-top:12px">Fortier&rsquo;s Mandingos and the11s lost by more than a perfect lineup would have covered. Those two were beatings.</p>
 
-    <p class="sub-h2">Season to date, lineup efficiency</p>
+    <p class="sub-h2">Lineup efficiency through three weeks</p>
     <div class="tablewrap"><table>
-      <thead><tr><th scope="col">Team</th><th scope="col">Scored</th><th scope="col">Possible</th><th scope="col">Season</th><th scope="col">Wk 1</th><th scope="col">Wk 2</th><th scope="col">Wk 3</th><th scope="col">Benched</th></tr></thead>
+      <thead><tr><th scope="col">Team</th><th scope="col">Scored</th><th scope="col">Possible</th><th scope="col">To date</th><th scope="col">Wk 1</th><th scope="col">Wk 2</th><th scope="col">Wk 3</th><th scope="col">Benched</th></tr></thead>
       <tbody>
         <tr><td class="name">Eastern Hognosers</td><td class="num">439.30</td><td class="dim">442.80</td><td class="good">99.2%</td><td class="dim">98.3%</td><td class="dim">99.6%</td><td class="good">100.0%</td><td class="dim">61.10</td></tr>
         <tr><td class="name">St. Dorothy Mantooth</td><td class="num">365.86</td><td class="dim">396.46</td><td class="good">92.3%</td><td class="dim">90.9%</td><td class="dim">97.1%</td><td class="dim">89.2%</td><td class="dim">131.54</td></tr>
@@ -519,86 +520,245 @@ footer a{color:var(--good)}
   </section>
 
   <!-- ══════════════ WEEK 4 ══════════════ -->
-  <section id="wk4" hidden>
-    <h2 class="disp">Week 4 preview</h2>
-    <p class="sub-h">Projections are Yahoo&rsquo;s at the time of capture, Tuesday 29 September, and will move as the week develops. Kickoff Thursday.</p>
+  <section id="wk4">
+    <h2 class="disp">Week 4</h2>
+    <p class="sub-h">Two perfect lineups, a first win, and an $80 running back who watched the whole thing from the bench. Six teams are now 2&ndash;2 and one man is still unbeaten.</p>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">Mike Honcho</span><span class="score hi">163.76</span><span class="vs">def</span><span class="score lo">118.02</span><span class="l">No Suh For You</span></div>
+      <p class="muline">Margin 45.74 &middot; perfect lineup &middot; highest score of the week</p>
+      <div class="mubody">
+        <p><b>Cody played a perfect lineup and is 4&ndash;0.</b> 163.76 of a possible 163.76, with Tetairoa McMillan going for <b>39.20</b>, the top single score of the week, Chuba Hubbard 26.40 out of the flex and Tee Higgins 22.20. He has conceded 322.02 all season, a hundred fewer than anyone else, and has not touched the waiver wire since week 2.</p>
+        <p>Calvin had the opposite kind of day at 82.2%. Joe Burrow 28.72 and Jonathan Taylor 22.20 were fine; <b>Brian Robinson scored 25.20 on the bench</b> while Bucky Irving started for 6.10, and Travis Kelce managed 2.50 with Juwan Johnson&rsquo;s 8.90 unused. Even the optimal 143.52 loses this by twenty.</p>
+      </div>
+      <div class="keys"><span class="pill top">McMillan 39.20</span><span class="pill top">Burrow 28.72</span><span class="pill top">Hubbard 26.40</span><span class="pill flop">Kelce 2.50</span><span class="pill flop">B. Robinson 25.20 benched</span></div>
+    </div>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">Antonio Banderas</span><span class="score hi">144.68</span><span class="vs">def</span><span class="score lo">93.94</span><span class="l">Connor&rsquo;s team</span></div>
+      <p class="muline">Margin 50.74 &middot; biggest of the week</p>
+      <div class="mubody">
+        <p>Kozel has won two straight and <b>started the correct quarterback for the second week running</b>, Lamar Jackson 18.88 with Mahomes at 17.00 on the bench. Kyren Williams 31.70 and Bijan Robinson 28.20 did the rest. He is 2&ndash;2 and 91.3% for the season, which nobody saw coming after he benched Mahomes twice in the opening fortnight.</p>
+        <p>Connor benched <b>Kyle Monangai, who scored 28.50</b>, for the second time in three weeks, and started Garrett Wilson for 4.20 in the flex. He got the quarterback call right for once, Shough 15.94 over Nix 13.56, which is cold comfort. Season total left on the bench: <b>280.62 points</b>, ninety more than anyone else in the league.</p>
+      </div>
+      <div class="keys"><span class="pill top">Kyren 31.70</span><span class="pill top">Bijan 28.20</span><span class="pill top">Bowers 17.60</span><span class="pill flop">G. Wilson 4.20</span><span class="pill flop">Monangai 28.50 benched</span></div>
+    </div>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">Saucy Move evan</span><span class="score hi">140.62</span><span class="vs">def</span><span class="score lo">115.88</span><span class="l">Least LIKELY to Succeed</span></div>
+      <p class="muline">Margin 24.74 &middot; perfect lineup &middot; first win of the season</p>
+      <div class="mubody">
+        <p><b>Evan played a perfect lineup to win his first game</b>, 140.62 of 140.62, one week after starting two players who had already been ruled out. Nico Collins 27.30, Puka Nacua 23.20 out of the flex, Malik Nabers 20.20 and Rhamondre Stevenson 16.90. From 0&ndash;3 and the lowest score of the season to flawless in seven days.</p>
+        <p>Austin&rsquo;s week deserves its own monument. <b>He spent $80 of waiver budget on Ollie Gordon II on the Tuesday, then left him on the bench</b>, where Gordon scored 18.00 while Saquon Barkley started for 1.50. Devaughn Vele added another 14.40 in reserve. CeeDee Lamb&rsquo;s 33.80 kept it close. <b>And it would not have mattered: his perfect lineup is 140.58, which loses to Evan by 0.04.</b></p>
+      </div>
+      <div class="keys"><span class="pill top">Lamb 33.80</span><span class="pill top">Collins 27.30</span><span class="pill top">Nacua 23.20</span><span class="pill flop">Saquon 1.50</span><span class="pill flop">$80 Gordon 18.00 benched</span></div>
+    </div>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">The Fosterbas</span><span class="score hi">120.00</span><span class="vs">def</span><span class="score lo">94.62</span><span class="l">August West</span></div>
+      <p class="muline">Margin 25.38</p>
+      <div class="mubody">
+        <p>Foster is 3&ndash;1 and back to tidy work at 94.9%. Javonte Williams went for 28.80, Zay Flowers 21.80 and Quinshon Judkins 18.60 from the flex. Only Emeka Egbuka&rsquo;s 2.30 let it down, with Brian Thomas Jr.&rsquo;s 8.70 the obvious swap.</p>
+        <p>Cook finally benched Kyle Pitts and was promptly punished by the universe: <b>Pitts scored 6.20 in reserve while Dalton Schultz started for 1.90.</b> Romeo Doubs added 20.80 on the bench and DJ Moore started for 2.20. Sam Darnold, bought for $2 to replace the Drew Lock experiment, returned 14.32. Optimal 117.52, which still loses.</p>
+      </div>
+      <div class="keys"><span class="pill top">Javonte 28.80</span><span class="pill top">Flowers 21.80</span><span class="pill flop">Schultz 1.90</span><span class="pill flop">DJ Moore 2.20</span><span class="pill flop">Doubs 20.80 benched</span></div>
+    </div>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">St. Dorothy Mantooth</span><span class="score hi">102.12</span><span class="vs">def</span><span class="score lo">91.88</span><span class="l">the11s</span></div>
+      <p class="muline">Margin 10.24 &middot; closest of the week</p>
+      <div class="mubody">
+        <p>Sam is 2&ndash;2 and won while leaving 50.66 on the bench, including <b>Bryce Young&rsquo;s 22.46 behind Brock Purdy&rsquo;s 19.62</b> and Deebo Samuel&rsquo;s 15.50. The Tyreek Hill pickup contributed a clean 0.00 in reserve. George Kittle 15.00 and Cam Little&rsquo;s 14.00 at kicker got it done.</p>
+        <p>Brooks is <b>0&ndash;4 and this is the one that will sting</b>. He paid <b>$35 for Matthew Stafford on the Friday and started him for 12.68, while Drake Maye scored 27.16 on his bench.</b> Alvin Kamara added 20.30 in reserve. He also paid $35 for Braelon Allen, who started for 7.70. The optimal lineup is 127.66 and wins by 25. He has spent more on waivers than anyone and has the worst record and the fewest points.</p>
+      </div>
+      <div class="keys"><span class="pill top">Young 22.46 benched</span><span class="pill top">LaPorta 18.40</span><span class="pill flop">Jennings 1.30</span><span class="pill flop">$35 Stafford 12.68</span><span class="pill flop">Maye 27.16 benched</span></div>
+    </div>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">Eastern Hognosers</span><span class="score hi">85.18</span><span class="vs">def</span><span class="score lo">65.62</span><span class="l">Fortier&rsquo;s Mandingos</span></div>
+      <p class="muline">Margin 19.56 &middot; lowest-scoring game of the season</p>
+      <div class="mubody">
+        <p>Alex won with <b>the worst week of his season by a distance, 74.3%</b>, after three straight at 98.3, 99.6 and a perfect 100.0. Kenneth Walker&rsquo;s 31.40 was most of it. <b>Emanuel Wilson scored 25.50 on the bench</b>, Rashee Rice started for 0.00 and Dalton Kincaid for 1.20. He is 3&ndash;1 and still leads the league in scoring.</p>
+        <p>Zac posted <b>65.62, the lowest total anyone has managed this season</b>. Ja&rsquo;Marr Chase gave him 4.20, Kenyon Sadiq started at flex for <b>0.00</b>, and three of his bench players were ruled out. The detail that will follow him around: <b>he dropped Matthew Stafford on 30 September for nothing. Brooks paid $35 for him three days later.</b> Stafford had outscored Zac&rsquo;s starting quarterback three weeks running.</p>
+      </div>
+      <div class="keys"><span class="pill top">Walker 31.40</span><span class="pill flop">Sadiq 0.00</span><span class="pill flop">Rice 0.00</span><span class="pill flop">Chase 4.20</span><span class="pill flop">E. Wilson 25.50 benched</span></div>
+    </div>
+
+    <p class="sub-h2">Standings after four weeks</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">#</th><th scope="col">Team</th><th scope="col">Manager</th><th scope="col">W&ndash;L</th><th scope="col">PF</th><th scope="col">PA</th><th scope="col">Streak</th><th scope="col">FAB</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">1</td><td class="name">Mike Honcho</td><td class="dim">Cody</td><td><b>4&ndash;0</b></td><td class="num">511.30</td><td class="good">322.02</td><td class="good">W4</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">2</td><td class="name">Eastern Hognosers</td><td class="dim">Alex</td><td><b>3&ndash;1</b></td><td class="good">524.48</td><td class="dim">426.88</td><td class="good">W3</td><td class="dim">$93</td></tr>
+        <tr><td class="dim">3</td><td class="name">The Fosterbas</td><td class="dim">Foster</td><td><b>3&ndash;1</b></td><td class="num">480.40</td><td class="dim">428.36</td><td class="dim">W1</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">4</td><td class="name">St. Dorothy Mantooth</td><td class="dim">Sam</td><td><b>2&ndash;2</b></td><td class="num">467.98</td><td class="dim">463.54</td><td class="dim">W1</td><td class="dim">$97</td></tr>
+        <tr><td class="dim">5</td><td class="name">Antonio Banderas</td><td class="dim">Kozel</td><td><b>2&ndash;2</b></td><td class="num">461.58</td><td class="dim">432.82</td><td class="good">W2</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">6</td><td class="name">No Suh For You</td><td class="dim">Calvin</td><td><b>2&ndash;2</b></td><td class="num">451.24</td><td class="dim">463.30</td><td class="dim">L1</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">7</td><td class="name">August West</td><td class="dim">Cook</td><td><b>2&ndash;2</b></td><td class="num">446.10</td><td class="bad">493.20</td><td class="dim">L1</td><td class="dim">$96</td></tr>
+        <tr><td class="dim">8</td><td class="name">Least LIKELY to Succeed</td><td class="dim">Austin</td><td><b>2&ndash;2</b></td><td class="num">440.96</td><td class="dim">405.24</td><td class="dim">L1</td><td class="bad">$15</td></tr>
+        <tr><td class="dim">9</td><td class="name">Fortier&rsquo;s Mandingos</td><td class="dim">Zac</td><td><b>2&ndash;2</b></td><td class="num">359.46</td><td class="dim">374.64</td><td class="bad">L2</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">10</td><td class="name">Saucy Move evan</td><td class="dim">Evan</td><td><b>1&ndash;3</b></td><td class="num">386.12</td><td class="dim">453.60</td><td class="dim">W1</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">11</td><td class="name">Connor&rsquo;s team</td><td class="dim">Connor</td><td><b>1&ndash;3</b></td><td class="num">381.56</td><td class="bad">509.68</td><td class="bad">L2</td><td class="dim">$100</td></tr>
+        <tr><td class="dim">12</td><td class="name">the11s</td><td class="dim">Brooks</td><td><b>0&ndash;4</b></td><td class="bad">315.08</td><td class="dim">452.98</td><td class="bad">L4</td><td class="bad">$14</td></tr>
+      </tbody>
+    </table></div>
+
+    <p class="sub-h2">The waiver bonfire</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">Date</th><th scope="col">Team</th><th scope="col">Player</th><th scope="col">Cost</th><th scope="col">What happened</th></tr></thead>
+      <tbody>
+        <tr><td class="dim">Sep 30</td><td class="name">Least LIKELY to Succeed</td><td>Ollie Gordon II</td><td class="bad">$80</td><td class="name">Benched. Scored 18.00.</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">the11s</td><td>Braelon Allen</td><td class="bad">$35</td><td class="name">Started. 7.70.</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">the11s</td><td>Matthew Stafford</td><td class="bad">$35</td><td class="name">Started over Drake Maye&rsquo;s 27.16. 12.68.</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">August West</td><td>Courtland Sutton</td><td class="dim">$2</td><td class="name">Benched. 0.90.</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">August West</td><td>Sam Darnold</td><td class="dim">$2</td><td class="name">Started. 14.32.</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">Eastern Hognosers</td><td>Rams DEF</td><td class="dim">$1</td><td class="name">Benched. 7.00.</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">Fortier&rsquo;s Mandingos</td><td class="dim">dropped Matthew Stafford</td><td class="dim">free</td><td class="name">Brooks paid $35 for him three days later.</td></tr>
+      </tbody>
+    </table></div>
+
+    <p class="sub-h2">Week 4 extremes</p>
+    <div class="cols">
+      <div><p class="sub-h2" style="margin-top:0">Best starters</p><ul class="ex">
+        <li><span class="v good">39.20</span><span class="w">Tetairoa McMillan <span class="mono">WR</span></span><span class="when">Mike Honcho</span></li>
+        <li><span class="v good">33.80</span><span class="w">CeeDee Lamb <span class="mono">WR</span></span><span class="when">Least LIKELY to Succeed</span></li>
+        <li><span class="v good">31.70</span><span class="w">Kyren Williams <span class="mono">RB</span></span><span class="when">Antonio Banderas</span></li>
+        <li><span class="v good">31.40</span><span class="w">Kenneth Walker <span class="mono">RB</span></span><span class="when">Eastern Hognosers</span></li>
+        <li><span class="v good">28.80</span><span class="w">Javonte Williams <span class="mono">RB</span></span><span class="when">The Fosterbas</span></li>
+        <li><span class="v good">28.72</span><span class="w">Joe Burrow <span class="mono">QB</span></span><span class="when">No Suh For You</span></li>
+      </ul></div>
+      <div><p class="sub-h2" style="margin-top:0">Worst starters</p><ul class="ex">
+        <li><span class="v bad">0.00</span><span class="w">Kenyon Sadiq <span class="mono">TE</span></span><span class="when">Fortier&rsquo;s &middot; started at flex</span></li>
+        <li><span class="v bad">0.00</span><span class="w">Rashee Rice <span class="mono">WR</span></span><span class="when">Eastern Hognosers</span></li>
+        <li><span class="v bad">1.20</span><span class="w">Dalton Kincaid <span class="mono">TE</span></span><span class="when">Eastern Hognosers</span></li>
+        <li><span class="v bad">1.30</span><span class="w">Jauan Jennings <span class="mono">WR</span></span><span class="when">the11s</span></li>
+        <li><span class="v bad">1.50</span><span class="w">Saquon Barkley <span class="mono">RB</span></span><span class="when">Least LIKELY to Succeed</span></li>
+        <li><span class="v bad">1.90</span><span class="w">Dalton Schultz <span class="mono">TE</span></span><span class="when">August West</span></li>
+      </ul></div>
+    </div>
+
+    <div class="cols" style="margin-top:24px">
+      <div><p class="sub-h2" style="margin-top:0">Biggest benched</p><ul class="ex">
+        <li><span class="v bad">28.50</span><span class="w">Kyle Monangai</span><span class="when">Connor&rsquo;s team &middot; again</span></li>
+        <li><span class="v bad">27.16</span><span class="w">Drake Maye</span><span class="when">the11s &middot; behind a $35 Stafford</span></li>
+        <li><span class="v bad">25.50</span><span class="w">Emanuel Wilson</span><span class="when">Eastern Hognosers &middot; won anyway</span></li>
+        <li><span class="v bad">25.20</span><span class="w">Brian Robinson</span><span class="when">No Suh For You</span></li>
+        <li><span class="v bad">22.46</span><span class="w">Bryce Young</span><span class="when">St. Dorothy Mantooth &middot; won anyway</span></li>
+        <li><span class="v bad">20.80</span><span class="w">Romeo Doubs</span><span class="when">August West</span></li>
+      </ul></div>
+      <div><p class="sub-h2" style="margin-top:0">Lineup efficiency, week 4</p><ul class="ex">
+        <li><span class="v good">100.0%</span><span class="w">Mike Honcho</span><span class="when">perfect, and 4&ndash;0</span></li>
+        <li><span class="v good">100.0%</span><span class="w">Saucy Move evan</span><span class="when">perfect, first win</span></li>
+        <li><span class="v good">94.9%</span><span class="w">The Fosterbas</span><span class="when"></span></li>
+        <li><span class="v">82.4%</span><span class="w">Least LIKELY to Succeed</span><span class="when">perfect still loses by 0.04</span></li>
+        <li><span class="v bad">74.3%</span><span class="w">Eastern Hognosers</span><span class="when">worst week, still won</span></li>
+        <li><span class="v bad">72.0%</span><span class="w">the11s</span><span class="when">optimal lineup wins by 25</span></li>
+      </ul></div>
+    </div>
+
+    <p class="sub-h2">Season to date, lineup efficiency</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th scope="col">Team</th><th scope="col">Scored</th><th scope="col">Possible</th><th scope="col">Season</th><th scope="col">Wk 1</th><th scope="col">Wk 2</th><th scope="col">Wk 3</th><th scope="col">Wk 4</th><th scope="col">Benched</th></tr></thead>
+      <tbody>
+        <tr><td class="name">Eastern Hognosers</td><td class="num">524.48</td><td class="dim">557.48</td><td class="good">94.1%</td><td class="dim">98.3%</td><td class="dim">99.6%</td><td class="good">100.0%</td><td class="bad">74.3%</td><td class="dim">111.00</td></tr>
+        <tr><td class="name">Mike Honcho</td><td class="num">511.30</td><td class="dim">547.00</td><td class="good">93.5%</td><td class="dim">93.6%</td><td class="dim">92.4%</td><td class="dim">85.8%</td><td class="good">100.0%</td><td class="dim">167.44</td></tr>
+        <tr><td class="name">The Fosterbas</td><td class="num">480.40</td><td class="dim">517.32</td><td class="good">92.9%</td><td class="dim">94.6%</td><td class="dim">99.7%</td><td class="dim">83.6%</td><td class="dim">94.9%</td><td class="dim">178.54</td></tr>
+        <tr><td class="name">Antonio Banderas</td><td class="num">461.58</td><td class="dim">505.76</td><td class="num">91.3%</td><td class="dim">96.9%</td><td class="dim">84.3%</td><td class="dim">89.8%</td><td class="dim">93.2%</td><td class="dim">164.88</td></tr>
+        <tr><td class="name">St. Dorothy Mantooth</td><td class="num">467.98</td><td class="dim">515.82</td><td class="num">90.7%</td><td class="dim">90.9%</td><td class="dim">97.1%</td><td class="dim">89.2%</td><td class="dim">85.6%</td><td class="dim">182.20</td></tr>
+        <tr><td class="name">No Suh For You</td><td class="num">451.24</td><td class="dim">509.14</td><td class="num">88.6%</td><td class="dim">90.3%</td><td class="good">100.0%</td><td class="dim">84.7%</td><td class="dim">82.2%</td><td class="dim">175.40</td></tr>
+        <tr><td class="name">Fortier&rsquo;s Mandingos</td><td class="num">359.46</td><td class="dim">413.30</td><td class="num">87.0%</td><td class="dim">96.1%</td><td class="dim">86.3%</td><td class="dim">84.2%</td><td class="dim">80.1%</td><td class="dim">138.28</td></tr>
+        <tr><td class="name">Saucy Move evan</td><td class="num">386.12</td><td class="dim">446.02</td><td class="num">86.6%</td><td class="dim">77.8%</td><td class="dim">97.4%</td><td class="dim">74.3%</td><td class="good">100.0%</td><td class="dim">116.52</td></tr>
+        <tr><td class="name">Least LIKELY to Succeed</td><td class="num">440.96</td><td class="dim">518.26</td><td class="num">85.1%</td><td class="dim">76.8%</td><td class="dim">85.1%</td><td class="good">97.7%</td><td class="dim">82.4%</td><td class="bad">200.10</td></tr>
+        <tr><td class="name">August West</td><td class="num">446.10</td><td class="dim">524.50</td><td class="num">85.1%</td><td class="dim">97.1%</td><td class="bad">65.9%</td><td class="dim">88.1%</td><td class="dim">80.5%</td><td class="dim">174.40</td></tr>
+        <tr><td class="name">Connor&rsquo;s team</td><td class="num">381.56</td><td class="dim">496.86</td><td class="bad">76.8%</td><td class="bad">60.3%</td><td class="dim">88.8%</td><td class="dim">75.5%</td><td class="dim">79.4%</td><td class="bad">280.62</td></tr>
+        <tr><td class="name">the11s</td><td class="num">315.08</td><td class="dim">420.18</td><td class="bad">75.0%</td><td class="dim">78.7%</td><td class="dim">78.1%</td><td class="bad">70.7%</td><td class="dim">72.0%</td><td class="dim">189.34</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <!-- ══════════════ WEEK 5 ══════════════ -->
+  <section id="wk5" hidden>
+    <h2 class="disp">Week 5 preview</h2>
+    <p class="sub-h">First plays second in the closest projected game of the week. Projections are Yahoo&rsquo;s at the time of capture, Tuesday 6 October, and will move as the week develops.</p>
 
     <div class="tablewrap"><table>
       <thead><tr><th scope="col">Team</th><th scope="col">Rec</th><th scope="col">Proj</th><th scope="col">Team</th><th scope="col">Rec</th><th scope="col">Proj</th><th scope="col">Edge</th></tr></thead>
       <tbody>
-        <tr><td class="name">No Suh For You</td><td class="dim">2&ndash;1</td><td class="num">104.85</td><td class="name">Mike Honcho</td><td class="dim">3&ndash;0</td><td class="num">115.68</td><td class="good">Honcho 10.83</td></tr>
-        <tr><td class="name">Fortier&rsquo;s Mandingos</td><td class="dim">2&ndash;1</td><td class="num">103.02</td><td class="name">Eastern Hognosers</td><td class="dim">2&ndash;1</td><td class="num">117.80</td><td class="good">Hognosers 14.78</td></tr>
-        <tr><td class="name">The Fosterbas</td><td class="dim">2&ndash;1</td><td class="num">103.42</td><td class="name">August West</td><td class="dim">2&ndash;1</td><td class="num">93.86</td><td class="good">Fosterbas 9.56</td></tr>
-        <tr><td class="name">Antonio Banderas</td><td class="dim">1&ndash;2</td><td class="num">103.93</td><td class="name">Connor&rsquo;s team</td><td class="dim">1&ndash;2</td><td class="num">89.69</td><td class="good">Banderas 14.24</td></tr>
-        <tr><td class="name">St. Dorothy Mantooth</td><td class="dim">1&ndash;2</td><td class="num">106.44</td><td class="name">the11s</td><td class="dim">0&ndash;3</td><td class="bad">68.31</td><td class="good">Mantooth 38.13</td></tr>
-        <tr><td class="name">Least LIKELY to Succeed</td><td class="dim">2&ndash;1</td><td class="num">105.66</td><td class="name">Saucy Move evan</td><td class="dim">0&ndash;3</td><td class="bad">65.07</td><td class="good">Least LIKELY 40.59</td></tr>
+        <tr><td class="name">Eastern Hognosers</td><td class="dim">3&ndash;1</td><td class="num">84.84</td><td class="name">Mike Honcho</td><td class="dim">4&ndash;0</td><td class="num">80.13</td><td class="good">Hognosers 4.71</td></tr>
+        <tr><td class="name">Antonio Banderas</td><td class="dim">2&ndash;2</td><td class="num">104.98</td><td class="name">Least LIKELY to Succeed</td><td class="dim">2&ndash;2</td><td class="num">94.32</td><td class="good">Banderas 10.66</td></tr>
+        <tr><td class="name">The Fosterbas</td><td class="dim">3&ndash;1</td><td class="num">116.45</td><td class="name">Saucy Move evan</td><td class="dim">1&ndash;3</td><td class="num">102.23</td><td class="good">Fosterbas 14.22</td></tr>
+        <tr><td class="name">Fortier&rsquo;s Mandingos</td><td class="dim">2&ndash;2</td><td class="num">92.47</td><td class="name">August West</td><td class="dim">2&ndash;2</td><td class="num">108.65</td><td class="good">August West 16.18</td></tr>
+        <tr><td class="name">St. Dorothy Mantooth</td><td class="dim">2&ndash;2</td><td class="num">109.52</td><td class="name">No Suh For You</td><td class="dim">2&ndash;2</td><td class="num">92.42</td><td class="good">Mantooth 17.10</td></tr>
+        <tr><td class="name">the11s</td><td class="dim">0&ndash;4</td><td class="bad">73.39</td><td class="name">Connor&rsquo;s team</td><td class="dim">1&ndash;3</td><td class="num">103.69</td><td class="good">Connor 30.30</td></tr>
       </tbody>
     </table></div>
 
     <div class="mu" style="margin-top:26px">
-      <div class="muhead"><span class="w">No Suh For You</span><span class="score lo">104.85</span><span class="vs">vs</span><span class="score hi">115.68</span><span class="l">Mike Honcho</span></div>
-      <p class="muline">Game of the week</p>
-      <div class="mubody"><p>The last unbeaten team against the man who played a perfect lineup and lost with it. <b>Cody is 3&ndash;0 having conceded 204.00, sixty fewer than anyone else</b>, which is the quietest way to be top of the table. Calvin is 2&ndash;1 at 91.1% efficiency and has the better claim to being unlucky, given week 2. Projections give Honcho 10.83, and a Calvin win would leave the league with no unbeaten side at all.</p></div>
+      <div class="muhead"><span class="w">Eastern Hognosers</span><span class="score hi">84.84</span><span class="vs">vs</span><span class="score lo">80.13</span><span class="l">Mike Honcho</span></div>
+      <p class="muline">Game of the week &middot; first plays second &middot; closest projection on the board</p>
+      <div class="mubody"><p>The unbeaten against the league&rsquo;s leading scorer, separated by <b>4.71 projected points</b>. Cody is 4&ndash;0, has conceded a hundred fewer points than anyone, played a perfect lineup last week and has not made a waiver move since September. Alex leads the league in scoring, sits on 94.1% efficiency for the season and has won three straight despite a 74.3% stinker in week 4. <b>Both projections are under 85, the lowest pair of the week, which suggests byes have gutted two very good rosters.</b> Whoever has more bodies probably wins.</p></div>
     </div>
 
     <div class="mu">
-      <div class="muhead"><span class="w">Fortier&rsquo;s Mandingos</span><span class="score lo">103.02</span><span class="vs">vs</span><span class="score hi">117.80</span><span class="l">Eastern Hognosers</span></div>
+      <div class="muhead"><span class="w">Antonio Banderas</span><span class="score hi">104.98</span><span class="vs">vs</span><span class="score lo">94.32</span><span class="l">Least LIKELY to Succeed</span></div>
+      <p class="muline">Projected edge 10.66</p>
+      <div class="mubody"><p>Kozel has won two in a row by remembering which quarterback is better, which is more than most can say. Austin arrives with <b>$15 of waiver budget, a 2&ndash;2 record and an $80 running back he has started once</b>. He also has the worst luck in the league: his perfect lineup lost by 0.04 last week. If Ollie Gordon II is in the lineup this time, this is a coin flip.</p></div>
+    </div>
+
+    <div class="mu">
+      <div class="muhead"><span class="w">The Fosterbas</span><span class="score hi">116.45</span><span class="vs">vs</span><span class="score lo">102.23</span><span class="l">Saucy Move evan</span></div>
       <p class="muline">Highest projected total of the week</p>
-      <div class="mubody"><p>Alex is the best lineup manager the league has measured, <b>99.2% across three weeks with a perfect one in week 3</b>, and carries the highest projection on the slate. Zac lost his first game scoring 80.36 and has now watched Matthew Stafford outscore his starting quarterback three weeks running. If that happens a fourth time against this opponent, it will not be close.</p></div>
+      <div class="mubody"><p>Foster is 3&ndash;1 and carries the top projection on the slate. Evan has just gone from 0&ndash;3 and the season&rsquo;s lowest score to a <b>perfect lineup and his first win</b>, which is the sharpest turnaround anyone has managed. His season efficiency has climbed to 86.6%. The question is whether week 4 was a man finding his feet or a man getting lucky with a short bench.</p></div>
     </div>
 
     <div class="mu">
-      <div class="muhead"><span class="w">The Fosterbas</span><span class="score hi">103.42</span><span class="vs">vs</span><span class="score lo">93.86</span><span class="l">August West</span></div>
-      <p class="muline">Projected edge 9.56</p>
-      <div class="mubody"><p>Two 2&ndash;1 teams coming off opposite weeks. Foster lost for the first time and left 70.28 on his bench doing it, including the receiver he had just claimed for nothing. Cook won <b>with a 0.00 at quarterback</b> and has since signed the Bengals defense and is presumably still hunting a passer. Kyle Pitts has started three weeks for 3.00 points, so the tight end slot is the one to watch.</p></div>
+      <div class="muhead"><span class="w">Fortier&rsquo;s Mandingos</span><span class="score lo">92.47</span><span class="vs">vs</span><span class="score hi">108.65</span><span class="l">August West</span></div>
+      <p class="muline">Projected edge 16.18</p>
+      <div class="mubody"><p>Zac is coming off <b>65.62, the lowest score of the season</b>, having dropped Matthew Stafford four days before Brooks paid $35 for him, and having started a tight end at flex for 0.00. Cook has finally stopped starting Kyle Pitts and has a real quarterback again after the Drew Lock interlude. Both are 2&ndash;2. One of them is going to feel considerably worse on Tuesday.</p></div>
     </div>
 
     <div class="mu">
-      <div class="muhead"><span class="w">Antonio Banderas</span><span class="score hi">103.93</span><span class="vs">vs</span><span class="score lo">89.69</span><span class="l">Connor&rsquo;s team</span></div>
-      <p class="muline">Projected edge 14.24</p>
-      <div class="mubody"><p>Both 1&ndash;2, and both have spent the season leaving quarterbacks on the bench. Kozel finally got it right in week 3 and won. Connor has benched <b>213.96 points in three weeks</b>, the most in the league by seventy, and started a player from injured reserve last time out. The projection likes Kozel, which would be back-to-back wins for the first time.</p></div>
+      <div class="muhead"><span class="w">St. Dorothy Mantooth</span><span class="score hi">109.52</span><span class="vs">vs</span><span class="score lo">92.42</span><span class="l">No Suh For You</span></div>
+      <p class="muline">Projected edge 17.10</p>
+      <div class="mubody"><p>Two 2&ndash;2 teams with nearly identical records and very different weeks behind them. Sam won while leaving 50.66 on the bench, including a quarterback who outscored his starter. Calvin lost by 45 to the perfect lineup and left Brian Robinson&rsquo;s 25.20 in reserve. <b>Calvin is the only manager in the league yet to make a single waiver move all season</b>, which is either discipline or indifference.</p></div>
     </div>
 
     <div class="mu">
-      <div class="muhead"><span class="w">St. Dorothy Mantooth</span><span class="score hi">106.44</span><span class="vs">vs</span><span class="score lo">68.31</span><span class="l">the11s</span></div>
-      <p class="muline">Projected edge 38.13</p>
-      <div class="mubody"><p>Sam has the second-most points in the league and a 1&ndash;2 record, which is the schedule doing its work. Brooks is 0&ndash;3, scored the season low of 56.16, and his best player last week was a kicker he had owned for two days. <b>He has spent the most FAB in the league and made the most moves, and has the worst record and the fewest points.</b> Projections make this the second-biggest mismatch of the week.</p></div>
-    </div>
-
-    <div class="mu">
-      <div class="muhead"><span class="w">Least LIKELY to Succeed</span><span class="score hi">105.66</span><span class="vs">vs</span><span class="score lo">65.07</span><span class="l">Saucy Move evan</span></div>
-      <p class="muline">Projected edge 40.59 &middot; biggest gap of the week</p>
-      <div class="mubody"><p>Austin has won two straight and just posted a 97.7% week, the rename looking worse by the day. Evan is 0&ndash;3 and projected for 65.07, the lowest figure on the board, after a week in which he started two players who had already been ruled out. <b>His optimal lineup would have won that game.</b> He needs the roster and the lineup card to agree for once.</p></div>
+      <div class="muhead"><span class="w">the11s</span><span class="score lo">73.39</span><span class="vs">vs</span><span class="score hi">103.69</span><span class="l">Connor&rsquo;s team</span></div>
+      <p class="muline">Projected edge 30.30 &middot; biggest gap of the week</p>
+      <div class="mubody"><p>The two worst lineup managers in the league, at 75.0% and 76.8%, and between them they have left <b>469.96 points on the bench this season</b>. Brooks is 0&ndash;4 with $14 left after spending $70 in a week on two players who returned 20.38 between them. Connor is 1&ndash;3 and has benched his top scorer twice. Someone has to win this. Neither looks especially keen.</p></div>
     </div>
 
     <p class="sub-h2">Waiver wire, since week 1</p>
     <div class="tablewrap"><table>
       <thead><tr><th scope="col">Date</th><th scope="col">Team</th><th scope="col">In</th><th scope="col">Out</th><th scope="col">Cost</th></tr></thead>
       <tbody>
-        <tr><td class="dim">Sep 26</td><td class="name">the11s</td><td>Spencer Shrader</td><td class="dim">&mdash;</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 26</td><td class="name">Least LIKELY to Succeed</td><td>Jake Bates</td><td class="dim">Harrison Mevis</td><td class="dim">$0</td></tr>
-        <tr><td class="dim">Sep 25</td><td class="name">the11s</td><td class="dim">&mdash;</td><td class="dim">Jayden Reed</td><td class="dim">drop</td></tr>
-        <tr><td class="dim">Sep 24</td><td class="name">August West</td><td>Bengals DEF</td><td class="dim">Chargers DEF</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 24</td><td class="name">August West</td><td>Drew Lock</td><td class="dim">&mdash;</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 23</td><td class="name">the11s</td><td>C.J. Stroud</td><td class="dim">&mdash;</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 23</td><td class="name">August West</td><td class="dim">&mdash;</td><td class="dim">Jaxson Dart</td><td class="dim">drop</td></tr>
-        <tr><td class="dim">Sep 23</td><td class="name">St. Dorothy Mantooth</td><td>Packers DEF</td><td class="dim">Ravens DEF</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 23</td><td class="name">St. Dorothy Mantooth</td><td>Bryce Young</td><td class="dim">Kendre Miller</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 23</td><td class="name">Least LIKELY to Succeed</td><td>Chiefs DEF</td><td class="dim">Patriots DEF</td><td class="dim">free agent</td></tr>
-        <tr><td class="dim">Sep 23</td><td class="name">Mike Honcho</td><td>Tyjae Spears</td><td class="dim">Kenny Gainwell</td><td class="dim">free agent</td></tr>
+        <tr><td class="dim">Oct 4</td><td class="name">Antonio Banderas</td><td>Makai Lemon</td><td class="dim">Michael Mayer</td><td class="dim">free agent</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">the11s</td><td>Matthew Stafford</td><td class="dim">C.J. Stroud</td><td class="bad">$35</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">Eastern Hognosers</td><td>Emanuel Wilson</td><td class="dim">Kaelon Black</td><td class="dim">free agent</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">Eastern Hognosers</td><td>Rams DEF</td><td class="dim">49ers DEF</td><td class="dim">$1</td></tr>
+        <tr><td class="dim">Oct 3</td><td class="name">August West</td><td>Courtland Sutton</td><td class="dim">Tyler Allgeier</td><td class="dim">$2</td></tr>
+        <tr><td class="dim">Oct 1</td><td class="name">Least LIKELY to Succeed</td><td>Tre Tucker</td><td class="dim">Travis Etienne</td><td class="dim">free agent</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">Least LIKELY to Succeed</td><td>Ollie Gordon II</td><td class="dim">Caleb Douglas</td><td class="bad">$80</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">the11s</td><td>Braelon Allen</td><td class="dim">Rams DEF</td><td class="bad">$35</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">August West</td><td>Sam Darnold</td><td class="dim">Drew Lock</td><td class="dim">$2</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">Fortier&rsquo;s Mandingos</td><td>Kenyon Sadiq</td><td class="dim">Matthew Stafford</td><td class="dim">free agent</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">St. Dorothy Mantooth</td><td>Tyreek Hill</td><td class="dim">Chig Okonkwo</td><td class="dim">free agent</td></tr>
+        <tr><td class="dim">Sep 30</td><td class="name">Connor&rsquo;s team</td><td>Kenny Gainwell</td><td class="dim">De&rsquo;Von Achane</td><td class="dim">free agent</td></tr>
       </tbody>
     </table></div>
 
     <div class="notes" style="margin-top:18px">
-      <p><strong>Cook signed Drew Lock off free agency on the Wednesday and started him on the Sunday for 0.00.</strong> Caleb Williams was out, so the decision was forced, but the return was still nothing. He won anyway.</p>
-      <p><strong>Sam swapped the Ravens defense for the Packers and got 0.50 for it</strong>, in a game he lost by 11.46. He also dropped Kendre Miller, claimed for $2 the week before, after one start.</p>
-      <p><strong>Brooks has churned harder than anyone and has the least to show for it.</strong> Five moves, the most FAB spent in the league at $16, an 0&ndash;3 record, and a kicker as his leading scorer.</p>
-      <p><strong>Still no trades all season.</strong> FAB remaining: the11s $84, Eastern Hognosers $94, Least LIKELY $95, St. Dorothy Mantooth $97, everyone else untouched at $100.</p>
+      <p><strong>Austin spent $80 of a $95 budget on Ollie Gordon II and started Saquon Barkley instead.</strong> Gordon scored 18.00 on the bench, Barkley 1.50 in the lineup, and Austin lost by 24.74. He has $15 left for the next thirteen weeks.</p>
+      <p><strong>Brooks spent $70 in four days and got 20.38 for it.</strong> $35 on Braelon Allen, who started for 7.70, and $35 on Matthew Stafford, who started for 12.68 while Drake Maye scored 27.16 on the bench. He has $14 left and is 0&ndash;4.</p>
+      <p><strong>Zac dropped Matthew Stafford for nothing on 30 September.</strong> Brooks paid $35 for him three days later. Stafford had outscored Zac&rsquo;s starting quarterback in each of the previous three weeks. Zac replaced him with Kenyon Sadiq, who started at flex for 0.00.</p>
+      <p><strong>Connor finally dropped De&rsquo;Von Achane</strong>, one week after starting him from injured reserve.</p>
+      <p><strong>Calvin has still not made a single waiver move all season.</strong> Nor has Evan. Nobody has made a trade. FAB remaining: the11s $14, Least LIKELY $15, Eastern Hognosers $93, August West $96, St. Dorothy Mantooth $97, everyone else untouched at $100.</p>
     </div>
   </section>
 
   <footer>
-    Week 1 captured 15 September 2026, week 2 on 22 September, week 3 on 29 September, each after the Monday night game. Weeks 1 and 2 were unchanged by their correction windows; week 3 corrections close Thursday 1 October.<br>
+    Weeks captured each Tuesday after the Monday night game: 15 and 22 and 29 September, and 6 October. Weeks 1 to 3 were unchanged by their correction windows; week 4 corrections close Thursday 8 October.<br>
     Lineup efficiency compares points scored against the highest-scoring legal lineup that roster could have started that week, computed slot by slot against real position eligibility with the flex included, from full starter and bench box scores.<br>
     Source: Yahoo Fantasy league 714499. One franchise is listed by its manager&rsquo;s name. &nbsp;&middot;&nbsp; <a href="https://scotterall-cs.github.io/laker-legends/">The Record Book</a>
   </footer>
@@ -613,16 +773,18 @@ footer a{color:var(--good)}
     wk1: document.getElementById('wk1'),
     wk2: document.getElementById('wk2'),
     wk3: document.getElementById('wk3'),
-    wk4: document.getElementById('wk4')
+    wk4: document.getElementById('wk4'),
+    wk5: document.getElementById('wk5')
   };
   var labels = {
     wk1: 'Week 1 final',
     wk2: 'Week 2 final',
-    wk3: 'Week 3 final · corrections close Thu 1 Oct',
-    wk4: 'Week 4 · projections as of Tue 29 Sep'
+    wk3: 'Week 3 final',
+    wk4: 'Week 4 final · corrections close Thu 8 Oct',
+    wk5: 'Week 5 · projections as of Tue 6 Oct'
   };
   function show(key){
-    if(!panes[key]) key = 'wk3';
+    if(!panes[key]) key = 'wk4';
     for(var k in panes){ panes[k].hidden = (k !== key); }
     status.textContent = labels[key];
     if(sel.value !== key) sel.value = key;
@@ -631,7 +793,7 @@ footer a{color:var(--good)}
   sel.addEventListener('change', function(){ show(sel.value); });
   window.addEventListener('hashchange', function(){ show(location.hash.replace('#','')); });
   var start = location.hash.replace('#','');
-  show(panes[start] ? start : 'wk3');
+  show(panes[start] ? start : 'wk4');
 })();
 </script>
 
